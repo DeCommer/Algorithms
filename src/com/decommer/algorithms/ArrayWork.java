@@ -60,7 +60,7 @@ public class ArrayWork {
         if(arr == null || arr.length == 0) {
             throw new IllegalArgumentException("No data in array");
         }
-        int max = arr[0];
+        int max = 0;
         for(int i = 1; i < arr.length; i++) {
             if(arr[i] > max) {
                 max = arr[i];
@@ -68,6 +68,25 @@ public class ArrayWork {
         }
         return max;
     }
+
+    public static int secondMaxValueInArray(int[] arr) {
+        if(arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("No data in array");
+        }
+        int max = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] > max) {
+                secondMax = max;
+                max = arr[i];
+            }else if(arr[i] > secondMax && arr[i] != max) {
+                secondMax = arr[i];
+            }
+        }
+        return secondMax;
+    }
+
+    
 
     
 }

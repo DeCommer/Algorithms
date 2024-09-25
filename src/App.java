@@ -4,7 +4,7 @@ import com.decommer.algorithms.*;
 public class App {
     public static void main(String[] args) {
 
-        int[] arr =  {10, 4, 79, 56, 19, 7, 62, 16, 35, 45};
+        int[] arr =  {10, 4, 79, 56, 19, 45, 7, 62, 16, 35, 45};
 
         System.out.print("Original Array: ");
         ArrayWork.printArray(arr);
@@ -15,13 +15,14 @@ public class App {
         System.out.print("Odd Numbers in the array: ");
         ArrayWork.printArray(ArrayWork.oddInArray(arr));
 
+        System.out.println("Min value: " + ArrayWork.minValueInArray(arr));
+        System.out.println("Max value: " + ArrayWork.maxValueInArray(arr));
+        
+        System.out.println("Next Max Value: " + ArrayWork.secondMaxValueInArray(arr));
+        
         System.out.print("Bubble Sorted Array: ");
         ArrayWork.printArray(Sorting.bubbleSort(arr));
-
-        System.out.println("Min value: " + ArrayWork.minValueInArray(arr));
-
-        System.out.println("Max Value: " + ArrayWork.maxValueInArray(arr));
-
+         
     }
 
 }
