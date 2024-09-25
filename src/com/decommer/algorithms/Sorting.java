@@ -1,10 +1,8 @@
-package algorithms;
-
-import java.util.Arrays;
+package com.decommer.algorithms;
 
 public class Sorting {
     
-    public static String bubbleSort(int[] arr) {
+    public static int[] bubbleSort(int[] arr) {
         for(int a = 0; a < arr.length; a++) {
             for(int b = 0; b < arr.length - 1; b++) {
                 if(arr[b] > arr[b + 1]) {
@@ -13,6 +11,6 @@ public class Sorting {
                     arr[b + 1] = temp;
                 }
             }
-        }return Arrays.toString(arr);
+        }return arr;
     }
 }

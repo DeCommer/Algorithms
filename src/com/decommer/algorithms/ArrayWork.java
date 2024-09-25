@@ -1,4 +1,4 @@
-package algorithms;
+package com.decommer.algorithms;
 
 
 public class ArrayWork {
@@ -18,7 +18,9 @@ public class ArrayWork {
             }
         }
         int[] result = new int[oddCount];
+
         int index = 0;
+        
         for(int i = 0; i < arr.length; i++) {
             if(arr[i] % 2 != 0) {
                 result[index] = arr[i];
@@ -26,5 +28,18 @@ public class ArrayWork {
             }
         }
         return result;
+    }
+
+    public static int[] reverseArray(int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+        while(start < end) {
+             int temp = arr[start];
+             arr[start] = arr[end];
+             arr[end] = temp;
+             start++;
+             end--;
+        }
+        return arr;
     }
 }
