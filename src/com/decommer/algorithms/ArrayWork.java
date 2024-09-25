@@ -42,4 +42,32 @@ public class ArrayWork {
         }
         return arr;
     }
+
+    public static int minValueInArray(int[] arr) {
+        if(arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("No data in array");
+        }
+        int min = arr[0];
+        for(int i = 1; i < arr.length; i++) {
+            if(arr[i] < min) {
+                min = arr[i];
+            }
+        }  
+        return min;
+    }
+
+    public static int maxValueInArray(int[] arr) {
+        if(arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("No data in array");
+        }
+        int max = arr[0];
+        for(int i = 1; i < arr.length; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    
 }
