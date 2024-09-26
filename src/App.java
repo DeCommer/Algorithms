@@ -4,7 +4,7 @@ import com.decommer.algorithms.*;
 public class App {
     public static void main(String[] args) {
 
-        int[] arr =  {10, 4, 79, 56, 19, 45, 7, 62, 16, 35, 45};
+        int[] arr =  {10, 4, 0, 79, 56, 0, 19, 45, 7, 62, 16, 35, 45};
 
         System.out.print("Original Array: ");
         ArrayWork.printArray(arr);
@@ -23,6 +23,11 @@ public class App {
         System.out.print("Bubble Sorted Array: ");
         ArrayWork.printArray(Sorting.bubbleSort(arr));
          
+        System.out.print("Zeros moved to end: ");
+        ArrayWork.printArray(Sorting.moveZerosToEnd(arr));
+
+        System.out.print("Resized array: ");
+        ArrayWork.printArray(ArrayWork.resize(arr, 20));
     }
 
 }

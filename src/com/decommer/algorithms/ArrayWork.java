@@ -1,6 +1,5 @@
 package com.decommer.algorithms;
 
-
 public class ArrayWork {
 
     public static void printArray(int[] arr) {
@@ -86,7 +85,11 @@ public class ArrayWork {
         return secondMax;
     }
 
-    
-
-    
+    public static int[] resize(int[] arr, int newSize) {
+        int[] tempArr = new int[newSize];
+        for(int i = 0; i < arr.length; i++) {
+            tempArr[i] = arr[i];
+        }
+        return tempArr;
+    }
 }
