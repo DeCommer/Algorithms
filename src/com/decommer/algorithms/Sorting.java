@@ -28,4 +28,9 @@ public class Sorting {
             }
         }return arr;
     }
+
+    public static int[] mergeSort(int[] arr) {
+        
+        return arr;
+    }
 }

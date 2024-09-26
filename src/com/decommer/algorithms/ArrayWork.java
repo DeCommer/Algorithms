@@ -9,6 +9,14 @@ public class ArrayWork {
         System.out.println();
     }
 
+    public static int sumArray(int[] arr) {
+        int arrSum = 0;
+        for(int i = 0; i < arr.length; i++) {
+            arrSum += arr[i];
+        }
+        return arrSum;
+    }
+
     public static int[] oddInArray(int[] arr) {
         int oddCount = 0;
         for(int i = 0; i < arr.length; i++) {
@@ -85,11 +93,20 @@ public class ArrayWork {
         return secondMax;
     }
 
-    public static int[] resize(int[] arr, int newSize) {
+    public static int[] resize(int[] arr, int newSize) { //pass by value
         int[] tempArr = new int[newSize];
         for(int i = 0; i < arr.length; i++) {
             tempArr[i] = arr[i];
         }
         return tempArr;
+    }
+
+    public static int missingNumber(int[] arr) {
+        int n = arr.length + 1;
+        int arrSum = n * (n + 1) / 2;
+        for(int i = 0; i < arr.length; i++) {
+            arrSum -= arr[i];
+        }
+        return arrSum;
     }
 }
