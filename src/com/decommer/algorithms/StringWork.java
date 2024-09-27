@@ -9,12 +9,12 @@ public class StringWork {
         int end = word.length() - 1;
         while(start < end) {
             if(charArr[start] != charArr[end]) {
-                return "No";
+                return "No it is not.";
             }
             start++;
             end--;
         }
-        return "Yes";
+        return "Yes it is.";
     }
 
     
