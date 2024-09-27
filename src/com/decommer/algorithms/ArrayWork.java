@@ -2,6 +2,16 @@ package com.decommer.algorithms;
 
 public class ArrayWork {
 
+    public static int[] randomIntArray() {
+		int randLength = (int)(Math.random() * 9) + 1;
+		int[] randomArray = new int[randLength];
+		for(int i = 0; i < randomArray.length; i++) {
+			int randValue = (int)(Math.random() * 99);
+			randomArray[i] = randValue;
+		}
+		return randomArray;
+	}
+
     public static void printArray(int[] arr) {
         for(int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");

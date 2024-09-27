@@ -3,9 +3,10 @@ import com.decommer.algorithms.*;
 public class App {
     public static void main(String[] args) {
 
-        int[] arr =  {10, 4, 0, 1601, 79, 56, 0, 19, 45, 7, 62, 16, 35, 45}; // sum = 1979
+        //Integers
+        int[] arr =  {10, 4, 0, 1601, 79, 56, 0, 19, 45, 7, 62, 16, 35, 45};
+        // int[] arr = ArrayWork.randomIntArray();
         int[] missingNumArr = {5, 7, 8, 1, 6, 2, 3}; // sum = 32
-        
 
         System.out.print("Original Array: ");
         ArrayWork.printArray(arr);
@@ -35,7 +36,12 @@ public class App {
         System.out.print("Find missing number: ");
         ArrayWork.printArray(missingNumArr);
         System.out.print("Missing number is: " + ArrayWork.missingNumber(missingNumArr));
-        
+        System.out.println("");
+
+        //Strings
+        String word = "civic";
+        System.out.printf("Is '%s' a plaindrome? %s", word, StringWork.isPalindrome(word));
+
 
     }
 
