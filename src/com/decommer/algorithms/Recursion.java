@@ -23,10 +23,8 @@ public class Recursion {
     public static int exponentCalc(int b, int e) {
         if(e < 0) {
             return -1;
-        }
-        if(e == 0 || e == 1) {
+        }else if(e == 0 || e == 1) {
             return b;
-        }
-        return b * exponentCalc(b, e - 1);
+        }return b * exponentCalc(b, e - 1);
     }
 }
