@@ -48,7 +48,7 @@ public class App {
 
         //Recursive Algorithms
 
-        System.out.printf("%d! = %d", n, Recursion.factorial(10));
+        System.out.printf("%d! = %d", n, Recursion.factorial(7));
         System.out.println("");
         System.out.printf("The sum of %d's digits = %d", n, Recursion.sumOfDigits(n));
         System.out.println("");
