@@ -6,7 +6,7 @@ public class ArrayWork {
 		int randLength = (int)(Math.random() * 9) + 1;
 		int[] randomArray = new int[randLength];
 		for(int i = 0; i < randomArray.length; i++) {
-			int randValue = (int)(Math.random() * 99);
+			int randValue = (int)(Math.random() * 10);
 			randomArray[i] = randValue;
 		}
 		return randomArray;

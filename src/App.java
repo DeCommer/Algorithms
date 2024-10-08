@@ -5,7 +5,7 @@ public class App {
 
         // int[] arr =  {10, 4, 0, 1601, 79, 56, 0, 19, 45, 7, 62, 16, 35, 45};
         int[] arr = ArrayWork.randomIntArray();
-        int[] missingNumArr = {5, 7, 8, 1, 6, 2, 3}; // sum = 32
+        int[] missingNumArr = {5, 7, 9, 1, 6, 2, 3, 8}; // sum = 32
         int n = 325;
         int base = 8;
         int exp = 2;
@@ -54,6 +54,9 @@ public class App {
         System.out.println("");
 
         System.out.printf("%d to the power of %d = %d", base, exp ,Recursion.exponentCalc(base, exp));
+
+        System.out.println();
+        Searching.binarySearch(arr, 9);
 
         // DaysAboveAvgTemp.daysAboveAvgTemp();
     }
