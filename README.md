@@ -1,38 +1,50 @@
 ## Algorithms practice in Java
+This is a list of algorithms arranged from least difficult to most difficult, though the difficulty can vary based on individual experience and context. I will be adding these incrementally:
 
-I will be slowly building a library of popular algorithms from simple to complex.
+### Basic Algorithms
+1. **Linear Search**
+2. **Binary Search**
+3. **Bubble Sort**
+4. **Selection Sort**
+5. **Insertion Sort**
 
-Topics will include:
+### Intermediate Algorithms
+6. **Merge Sort**
+7. **Quick Sort**
+8. **Heap Sort**
+9. **Depth-First Search (DFS)**
+10. **Breadth-First Search (BFS)**
+11. **Dijkstra's Algorithm**
+12. **Dynamic Programming (basic problems like Fibonacci)**
 
-- sorting
-- stacks and queues
-- linked lists
-- recursion
-- efficiency
-- hash tables
-- search
-- heaps
+### Advanced Algorithms
+13. **A* Search Algorithm**
+14. **Bellman-Ford Algorithm**
+15. **Kruskal’s Algorithm**
+16. **Prim’s Algorithm**
+17. **Topological Sort**
+18. **Knapsack Problem (0/1 Knapsack)**
+19. **Longest Common Subsequence**
 
-Sample output
+### Complex Algorithms
+20. **Network Flow Algorithms (Ford-Fulkerson)**
+21. **Floyd-Warshall Algorithm**
+22. **Dynamic Programming (more complex problems)**
+23. **String Matching Algorithms (Knuth-Morris-Pratt, Rabin-Karp)**
+24. **Greedy Algorithms (general class)**
 
-    ```
-    int[] arr =  {10, 4, 0, 79, 56, 0, 19, 45, 7, 62, 16, 35, 45};
-    ```
+### Ultra Algorithms
+25. **Backtracking Algorithms (e.g., N-Queens, Sudoku)**
+26. **Branch and Bound Algorithms**
+27. **Integer Linear Programming**
+28. **Graph Isomorphism**
+29. **Randomized Algorithms (e.g., Monte Carlo methods)**
+30. **Machine Learning Algorithms (e.g., neural networks)**
 
-**Original Array:** 10 4 0 79 56 0 19 45 7 62 16 35 45
+### Theoretical Algorithms
+31. **Quantum Algorithms (e.g., Shor’s Algorithm)**
+32. **NP-complete Problems (e.g., Traveling Salesman Problem)**
+33. **Approximation Algorithms**
+34. **Evolutionary Algorithms (Genetic Algorithms)**
 
-**Reversed Array:** 45 35 16 62 7 45 19 0 56 79 0 4 10
-
-**Odd Numbers in the array:** 45 35 7 45 19 79
-
-**Min value:** 0
-
-**Max value:** 79
-
-**Next Max Value:** 62
-
-**Bubble Sorted Array:** 0 0 4 7 10 16 19 35 45 45 56 62 79
-
-**Zeros moved to end:** 4 7 10 16 19 35 45 45 56 62 79 0 0
-
-**Resized array:** 4 7 10 16 19 35 45 45 56 62 79 0 0 0 0 0 0 0 0 0 
+This list is not exhaustive and the difficulty can vary based on specific implementations and applications.
