@@ -1,13 +1,9 @@
 package com.decommer.algorithms.Basic;
 
+import com.decommer.PrintArray;
+
 public class BubbleSort {
 
-    public static void printArr(int[] arr) {
-        for(int n : arr) {
-            System.out.print(n + ", ");
-        }
-        System.out.println();
-    }
     public static void bubbleSwap(int[] arr, int i, int j) {
         int temp = arr[j];
         arr[j] = arr[j + 1];
@@ -34,9 +30,9 @@ public class BubbleSort {
         int[] arr = {7, 13, 5, 1, 19, 17, 3, 15, 11, 9};
         System.out.println("========= Bubble Sort =========");
         System.out.print("Before: ");
-        printArr(arr);
+        PrintArray.printArray(arr);
         System.out.print("After : ");
         bubbleSort(arr);
-        printArr(arr);
+        PrintArray.printArray(arr);
     }
 }
