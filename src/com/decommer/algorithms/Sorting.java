@@ -1,7 +1,6 @@
 package com.decommer.algorithms;
 
 public class Sorting {
-
     public static int[] moveZerosToEnd(int[] arr) {
         int j = 0;
         for(int i = 0; i < arr.length; i++) {
@@ -16,12 +15,6 @@ public class Sorting {
         }
         return arr;
     }
-    
-    public static int[] mergeSort(int[] arr) {
-        //coming soon
-        return arr;
-    }
-
     public static void quickSort(int[] arr, int start, int end) {
         if(arr != null && arr.length <= 1) {
             return;

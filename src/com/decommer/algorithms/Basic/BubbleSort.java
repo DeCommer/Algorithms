@@ -15,11 +15,8 @@ public class BubbleSort {
             }
         }return arr;
     }
-
     public static void main(String[] args) {
         int[] arr = {7, 13, 5, 1, 19, 17, 3, 15, 11, 9};
-
-       
         System.out.println("========= Bubble Sort =========");
         System.out.print("Before: ");
         PrintArray.printArray(arr);

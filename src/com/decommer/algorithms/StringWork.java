@@ -16,6 +16,4 @@ public class StringWork {
         }
         return "Yes it is.";
     }
-
-    
 }

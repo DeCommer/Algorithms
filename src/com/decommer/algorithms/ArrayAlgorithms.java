@@ -1,6 +1,6 @@
 package com.decommer.algorithms;
 
-public class ArrayWork {
+public class ArrayAlgorithms {
 
     public static int[] randomIntArray() {
 		int randLength = (int)(Math.random() * 9) + 1;
