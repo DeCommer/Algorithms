@@ -20,13 +20,10 @@ public class InsertionSort {
     public static void main(String[] args) {
         int[] arr = {7, 13, 5, 1, 19, 17, 3, 15, 11, 9};
         System.out.println("========= Insertion Sort =========");
-
         System.out.println("Before sort");
         PrintArray.printArray(arr);
         insertionSort(arr);
         System.out.println("After sort");
         PrintArray.printArray(arr);
-
-        
     }
 }
